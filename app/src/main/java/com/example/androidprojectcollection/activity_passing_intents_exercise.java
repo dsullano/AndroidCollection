@@ -66,8 +66,10 @@ public class activity_passing_intents_exercise extends AppCompatActivity {
                     gender = "Unknown";
                 }
 
-                String bDate = etxtBDate.getText().toString();
-                String pNumber = etxtPhoneNumber.getText().toString();
+                String bDate;
+                bDate = etxtBDate.getText().toString();
+                String pNumber;
+                pNumber = etxtPhoneNumber.getText().toString();
                 String emailAdd = etxtEmailAddress.getText().toString();
                 String course = spinner.getSelectedItem().toString();
 

@@ -1,5 +1,6 @@
 package com.example.androidprojectcollection;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -19,7 +20,7 @@ public class activity_passing_intents_exercise2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passing_intents_exercise2);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+       // Objects.requireNonNull(getSupportActionBar()).hide();
 
         tvFname = findViewById(R.id.tvFname2);
         tvLname = findViewById(R.id.tvLname2);
