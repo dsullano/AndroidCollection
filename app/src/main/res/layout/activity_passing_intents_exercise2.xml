@@ -24,7 +24,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/tvStudentProfile" />
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/tvStudentProfile"
+                android:textColor="#E91E63"
+                android:textSize="34sp" />
 
 
             <LinearLayout

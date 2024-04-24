@@ -14,7 +14,7 @@
                 android:title="Change Size" />
             <item
                 android:id="@+id/change_text"
-                android:title="Change Into Randon Text" />
+                android:title="Change Into Random Text" />
             <item
                 android:id="@+id/change_text_color"
                 android:title="Change Text Color" />
