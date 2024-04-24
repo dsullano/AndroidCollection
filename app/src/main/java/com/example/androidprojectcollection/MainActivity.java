@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button prefinalbtn;
 
     Button button2;
+    Button btnmenu;
 
 
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         midbtn = findViewById(R.id.midbtn);
         prefinalbtn = findViewById(R.id.prefibtn2);
         button2 = findViewById(R.id.button2);
+        btnmenu = findViewById(R.id.menuBtn);
 
         btn1.setOnClickListener(view -> {
             Intent intent1 = new Intent(
@@ -79,8 +81,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent6 = new Intent(
                         MainActivity.this,
-                        activity_passing_intents_exercise.class);
+                        PassingIntents.class);
                 startActivity(intent6);
+            }
+        });
+
+        btnmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent7 = new Intent(
+                        MainActivity.this,
+                        MenuExercise.class);
+                startActivity(intent7);
             }
         });
 

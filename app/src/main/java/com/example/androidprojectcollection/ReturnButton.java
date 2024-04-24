@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import java.util.Objects;
 
-public class activity_return_button extends AppCompatActivity {
+public class ReturnButton extends AppCompatActivity {
 
     Button btnReturn;
 

@@ -6,13 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Objects;
-
-public class activity_passing_intents_exercise2 extends AppCompatActivity {
+public class PassingIntents2 extends AppCompatActivity {
     TextView tvFname, tvLname, tvGender, tvBirthDate, tvPhoneNumber, tvEmail, tvCourse, tvCivilStatus, tvHeight, tvWeight, tvMunicipality, tvZIP, tvProvince;
     Button btnReturn;
     @SuppressLint("MissingInflatedId")
@@ -68,7 +65,7 @@ public class activity_passing_intents_exercise2 extends AppCompatActivity {
 
         btnReturn = findViewById(R.id.btnReturn2);
         btnReturn.setOnClickListener(view -> {
-            Intent intentRet = new Intent(activity_passing_intents_exercise2.this, activity_passing_intents_exercise.class);
+            Intent intentRet = new Intent(PassingIntents2.this, PassingIntents.class);
             startActivity(intentRet);
         });
     }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mItemChange"
+        android:title="Change" >
+        <menu >
+            <item
+                android:id="@+id/change_color_item"
+                android:title="Change Color" />
+            <item
+                android:id="@+id/change_size_item"
+                android:title="Change Size" />
+            <item
+                android:id="@+id/change_text"
+                android:title="Change Into Randon Text" />
+            <item
+                android:id="@+id/change_text_color"
+                android:title="Change Text Color" />
+            <item
+                android:id="@+id/rotate_button"
+                android:title="Rotate Button" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mItemReset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/mItemExit"
+        android:title="Exit" />
+</menu>

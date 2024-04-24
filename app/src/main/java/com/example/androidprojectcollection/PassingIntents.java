@@ -2,7 +2,6 @@ package com.example.androidprojectcollection;
 
 import static java.util.Objects.requireNonNull;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -11,9 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-import java.util.Objects;
-
-public class activity_passing_intents_exercise extends AppCompatActivity {
+public class PassingIntents extends AppCompatActivity {
     Button btnSubmit, btnClear;
     EditText etxtFname, etxtLname, etxtBDate, etxtPhoneNumber, etxtEmailAddress, etxtHeight, etxtWeight, etxtMunicipality, etxtZIPCode, etxtProvince;
     RadioButton rbMale, rbFemale, rbGenderOther;
@@ -92,7 +89,7 @@ public class activity_passing_intents_exercise extends AppCompatActivity {
                 String zip = etxtZIPCode.getText().toString();
                 String province = etxtProvince.getText().toString();
 
-                Intent intent = new Intent(activity_passing_intents_exercise.this, activity_passing_intents_exercise2.class);
+                Intent intent = new Intent(PassingIntents.this, PassingIntents2.class);
 
                 intent.putExtra("fname_key", fname);
                 intent.putExtra("lname_key", lname);
