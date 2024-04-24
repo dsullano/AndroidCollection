@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">AndroidProjectCollection</string>
+    <string name="btn1">Layout Exercise</string>
+    <string name="btn2">Button Exercise</string>
+    <string name="btn3">Calculator Exercise</string>
+    <string name="returnbtn">CLOSE</string>
+    <string name="backgroundbtn">CHANGE BACKGROUND</string>
+    <string name="colorbtn">CHANGE COLOR</string>
+    <string name="disappearbtn">DISAPPEAR</string>
+    <string name="btn4">MIDTERM EXAM</string>
+    <string name="toastbtn">TOAST</string>
+    <string name="igStory1">usher</string>
+    <string name="igStory2">goldenretriever</string>
+    <string name="igStory3">fernanda</string>
+    <string name="igStory4">lolaremedios</string>
+    <string name="igStory5">ambotkinsa</string>
+    <string name="igStory6">sikuanni</string>
+    <string name="igStory7">chickennuggets</string>
+    <string name="poster1">usher</string>
+    <string name="poster2">goldenretriever</string>
+    <string name="poster3">fernanda</string>
+    <string name="caption1">peaceeeee</string>
+    <string name="caption2">me everytime sa mobdev</string>
+    <string name="caption3">nalulungkot, nayayamot</string>
+    <string name="textbox">Say Something...</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Passing Intents Exercise -->
+    <string name="btnPassingIntents">Passing Intents</string>
+    <string name="tvFormTitle">Student Registration Form</string>
+    <string name="tvCompleteName">Complete Name</string>
+    <string name="tvGender">Gender:</string>
+    <string name="rbMale">Male</string>
+    <string name="rbFemale">Female</string>
+    <string name="rbOther">Other</string>
+    <string name="tvBdate">Birth Date: </string>
+    <string name="tvPhoneNumber">Phone Number: </string>
+    <string name="tvEmail">Email Address: </string>
+    <string name="btnSubmit">Submit</string>
+    <string name="txtFname">First Name:</string>
+    <string name="txtLname">Last Name:</string>
+    <string name="tvCourse">Course: </string>
+    <string name="tvCivilStatus">Civil Status: </string>
+    <string name="rbSingle">Single</string>
+    <string name="rbMarried">Married</string>
+    <string name="rbPreferNotToSay">Prefer not to say</string>
+    <string name="tvHeight">Height: </string>
+    <string name="tvCM">in cms</string>
+    <string name="tvWeight">Weight: </string>
+    <string name="tvKG">in kgs</string>
+    <string name="tvAddress">Physical Address</string>
+    <string name="tvMunicipality">Municipality:</string>
+    <string name="tvZIPcode">ZIP Code:</string>
+    <string name="tvProvince">Province:</string>
+    <string name="tvStudentProfile">Student Profile</string>
+    <string name="score" />
+    <string name="btnReturn">Return</string>
+    <string name="btnClear">Clear</string>
+</resources>
