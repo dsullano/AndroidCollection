@@ -1,5 +1,8 @@
 package com.example.androidprojectcollection;
 
+import static java.util.Objects.requireNonNull;
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -21,7 +24,7 @@ public class activity_passing_intents_exercise extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passing_intents_exercise);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        //Objects.requireNonNull(getSupportActionBar()).hide();
 
         // finding the elements through ID
         etxtFname = findViewById(R.id.etxtFirstName);
@@ -107,8 +110,9 @@ public class activity_passing_intents_exercise extends AppCompatActivity {
             }
         });
 
-        //btnClear = findViewById(R.id.btnClearForm);
+        btnClear = findViewById(R.id.btnClearForm);
         btnClear.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 etxtFname.setText("First Name");

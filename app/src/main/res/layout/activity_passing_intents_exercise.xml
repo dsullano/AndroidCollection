@@ -378,14 +378,14 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-<!--                <Button-->
-<!--                    android:id="@+id/btnClearForm"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginHorizontal="10dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="@string/btnClear"-->
-<!--                    app:cornerRadius="100dp" />-->
+                <Button
+                    android:id="@+id/btnClearForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/btnClear"
+                    app:cornerRadius="100dp" />
 
                 <Button
                     android:id="@+id/btnSubmitForm"
