@@ -193,5 +193,64 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
         return s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/");
     }
 
+    private String sequentialCalculate(String data){
+
+        ArrayList<String> finalData = new ArrayList<>();
+
+        // Extract numbers and operators
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < data.length(); i++) {
+            char c = data.charAt(i);
+            if (Character.isDigit(c) || c == '.') {
+                temp.append(c);
+            } else {
+                if (temp.length() > 0) {
+                    finalData.add(temp.toString());
+                    temp.setLength(0);
+                }
+                finalData.add(String.valueOf(c));
+            }
+        }
+        if (temp.length() > 0) {
+            finalData.add(temp.toString());
+        }
+
+        // Perform operations
+        Stack<String> stackOp = new Stack<>();
+        int start = 0;
+        if(isSolver(finalData.get(0))){
+            stackOp.push("0");
+        } else {
+            stackOp.push(finalData.get(0));
+            start = 1;
+        }
+
+        for (int i = start; i < finalData.size(); i++) {
+            if ( isSolver(finalData.get(i))) {
+                if(finalData.get(i).equals("+")){
+                    double prevNum = Double.parseDouble(stackOp.pop());
+                    double nextNum = Double.parseDouble(finalData.get(++i));
+                    stackOp.push(String.valueOf(prevNum + nextNum));
+                } else if (finalData.get(i).equals("-")){
+                    double prevNum = Double.parseDouble(stackOp.pop());
+                    double nextNum = Double.parseDouble(finalData.get(++i));
+                    stackOp.push(String.valueOf(prevNum - nextNum));
+                } else if (finalData.get(i).equals("*")) {
+                    double prevNum = Double.parseDouble(stackOp.pop());
+                    double nextNum = Double.parseDouble(finalData.get(++i));
+                    stackOp.push(String.valueOf(prevNum * nextNum));
+                } else if (finalData.get(i).equals("/")) {
+                    double prevNum = Double.parseDouble(stackOp.pop());
+                    double nextNum = Double.parseDouble(finalData.get(++i));
+                    stackOp.push(String.valueOf(prevNum / nextNum));
+                }
+            } else {
+                stackOp.push(finalData.get(i));
+            }
+        }
+
+        return stackOp.pop();
+    }
+
 
 }

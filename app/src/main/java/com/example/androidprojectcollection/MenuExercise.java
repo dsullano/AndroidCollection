@@ -55,7 +55,7 @@ public class MenuExercise extends AppCompatActivity {
         }else if(item.getItemId() == R.id.change_text){
             String s = generateRandomChars();
             btnChanger.setText(s);
-        }else if(item.getItemId() == R.id.rotate_button){
+        }else if(item.getItemId() == R.id.change_button_rotation){
             rotateButton();
         }
 
